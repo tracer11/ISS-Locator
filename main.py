@@ -28,7 +28,7 @@ def find_iss():
   screen.setworldcoordinates(-180, -90, 180, 90)
   screen.bgpic('images/map.gif')
 
-  #assings current ISS lat and long to variables to be used later
+  #assigns current ISS lat and long to variables to be used later
   iss_pos = json_results(iss_url)
   iss_lat = float(iss_pos['iss_position']['latitude'])
   iss_long = float(iss_pos['iss_position']['longitude'])
